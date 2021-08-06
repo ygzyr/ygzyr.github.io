@@ -6,7 +6,7 @@
         <!-- Metadata -->
         <meta content="@ygzyr" property="og:title" />
         <meta
-            content="Welcome to my website, I'm 5elenay."
+            content="Welcome to my website, I'm yağız."
             property="og:description"
         />
         <meta content="ygzyr" property="og:site_name" />
@@ -14,10 +14,10 @@
         <meta content="en_US" property="og:locale" />
         <meta content="https://raw.githubusercontent.com/ygzyr/ygzyr.github.io/main/static/images/favicon.png" property="og:image" />
 
-        <meta name="title" content="5elenay" />
+        <meta name="title" content="yağız" />
         <meta
             name="description"
-            content="Welcome to my website, I'm YgzYr."
+            content="Welcome to my website, I'm Yağız."
         />
         <meta
             name="keywords"
@@ -117,6 +117,19 @@
             <div id="technologies"></div>
             <hr />
             <h1 class="title">Github Repositories</h1>
+            
+             if (msg.d.spotify.track_id) {
+              $("#game").removeClass("hidden");
+              $("#aname").text(msg.d.spotify.song)
+              $("#adec").text(msg.d.spotify.artist)
+              $("#album").text(msg.d.spotify.album)
+              $("#art").html(`<img class="w-16 h-16 rounded-lg" src="${msg.d.spotify.album_art_url}">`)
+              $("#album_art").html(`<img src="${msg.d.spotify.album_art_url}" class="animate-spin w-6 h-6 rounded-full order-1">`)
+                
+            } else {
+              $("#game").addClass("hidden");  
+            }
+        };
             <div id="repos"></div>
         </div>
         <div class="alt-footer" style="float: bottom">
