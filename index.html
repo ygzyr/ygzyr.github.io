@@ -118,18 +118,7 @@
             <hr />
             <h1 class="title">Github Repositories</h1>
             
-             if (msg.d.spotify.track_id) {
-              $("#game").removeClass("hidden");
-              $("#aname").text(msg.d.spotify.song)
-              $("#adec").text(msg.d.spotify.artist)
-              $("#album").text(msg.d.spotify.album)
-              $("#art").html(`<img class="w-16 h-16 rounded-lg" src="${msg.d.spotify.album_art_url}">`)
-              $("#album_art").html(`<img src="${msg.d.spotify.album_art_url}" class="animate-spin w-6 h-6 rounded-full order-1">`)
-                
-            } else {
-              $("#game").addClass("hidden");  
-            }
-        };
+        
             <div id="repos"></div>
         </div>
         <div class="alt-footer" style="float: bottom">
